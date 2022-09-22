@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var PromptSync = require("prompt-sync");
+var Paciente_1 = require("./Paciente");
+var prompt = PromptSync();
+var Name = prompt('Digite seu nome: ');
+var diagnostico = prompt('Digite seu diagnostico: ');
+var CPF = Number(prompt(' Digite seu CPF: '));
+var paciente = new Paciente_1.Paciente(Name, diagnostico, CPF);
+console.log("Nome: ".concat(Name));
+console.log("Diagn\u00F3stico: ".concat(diagnostico));
+console.log("CPF: ".concat(CPF));
